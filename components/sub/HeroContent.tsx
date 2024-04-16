@@ -58,9 +58,15 @@ const HeroContent = () => {
           rel="noopener noreferrer"
           download
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] flex justify-center gap-3 align-center"
         >
           Get Resume
+          <Image
+            src="/download-icon.png"
+            alt="download-icon-logo"
+            width={24}
+            height={24}
+          />
         </motion.a>
       </div>
 

@@ -67,14 +67,15 @@ export const Socials = [
   {
     name: "Linkedin",
     src: "/linkedin.svg",
+    href: "https://www.linkedin.com/in/arjun-kumar-37862620b/",
   },
   {
     name: "Twitter",
     src: "/twitter.svg",
   },
   {
-    name: "Discord",
-    src: "/discord.svg",
+    name: "Github",
+    src: "/github.svg",
   },
 ];
 

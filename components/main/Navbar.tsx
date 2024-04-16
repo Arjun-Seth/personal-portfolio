@@ -1,5 +1,6 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -25,23 +26,50 @@ const Navbar = () => {
 
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer">
+            <Link href="#about-me" className="cursor-pointer">
               About
-            </a>
-            <a href="#skills" className="cursor-pointer">
+            </Link>
+            <Link href="#skills" className="cursor-pointer">
               Skills
-            </a>
-            <a href="#projects" className="cursor-pointer">
+            </Link>
+            <Link href="#projects" className="cursor-pointer">
               Projects
-            </a>
-            <a href="#contact" className="cursor-pointer">
+            </Link>
+            <Link href="#contact" className="cursor-pointer">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
+          <a
+            href="https://www.linkedin.com/in/arjun-kumar-37862620b/"
+            target="_blank"
+          >
+            <Image
+              src="/linkedin.svg"
+              alt="linkedin-logo"
+              width={24}
+              height={24}
+            />
+          </a>
+          <a href="https://twitter.com/Arjun_Dev07" target="_blank">
+            <Image
+              src="/twitter.svg"
+              alt="twitter-logo"
+              width={24}
+              height={24}
+            />
+          </a>
+          <a href="https://github.com/Arjun-Seth" target="_blank">
+            <Image
+              src="/gitwhite.png"
+              alt="github-logo"
+              width={24}
+              height={24}
+            />
+          </a>
+          {/* {Socials.map((social) => (
             <Image
               src={social.src}
               alt={social.name}
@@ -49,7 +77,7 @@ const Navbar = () => {
               width={24}
               height={24}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
