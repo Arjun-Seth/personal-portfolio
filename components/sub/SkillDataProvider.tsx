@@ -15,14 +15,7 @@ interface Props {
 
 const SkillDataProvider = ({ src, index }: Props) => {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
-  // let isMediumScreen = useMediaQuery({ query: "(min-width: 768px)" });
-  // const isLargeScreen = useMediaQuery({ query: "(min-width: 1024px)" });
-  // {
-  //   isLargeScreen && (isMediumScreen = false);
-  // }
-  // console.log(isLargeScreen);
-  // console.log(isMediumScreen);
-  // console.log(isSmallScreen);
+
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -54,15 +47,21 @@ const SkillDataProvider = ({ src, index }: Props) => {
         <Image src={src} width={50} height={50} alt="skill-image" />
       )} */}
 
-      <Image
+      {/* <Image
         src={src}
         width={`${isSmallScreen ? 32 : 64}`}
         height={`${isSmallScreen ? 32 : 64}`}
         // width={width}
         // height={height}
         alt="skill-image"
+      /> */}
+      <Image
+        src={src}
+        alt="skill-image"
+        width={0}
+        height={0}
+        className="h-[30px] w-[30px] sm:h-12 sm:w-12 md:h-16 md:w-16 xl:h-20 xl:w-20"
       />
-      {/* <Image className="large-icons" src={src} alt="skill-img" /> */}
     </motion.div>
   );
 };

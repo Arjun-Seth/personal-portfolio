@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 
 const Encryption = () => {
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
+  // const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
   // min-h-[450px] md:min-h-[650px] lg:min-h-[800px]
   return (
     <div className="flex flex-row relative items-center justify-center min-h-[450px] md:min-h-[650px] lg:min-h-[800px] xl:min-h-screen  w-full h-full">
@@ -24,26 +24,28 @@ const Encryption = () => {
           Security
         </motion.div>
       </div>
-      <div className="flex flex-col items-center justify-center translate-y-[-2px] md:translate-y-[-10px] xl:translate-y-[-20px] absolute z-[20] w-auto h-auto">
+      <div className="flex flex-col items-center justify-center translate-y-[-2px] md:translate-y-[-10px] xl:translate-y-[-16px] absolute z-[20] w-auto h-auto">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
           <Image
             src="/LockTop.png"
             alt="Lock top"
-            width={`${isSmallScreen ? 20 : 36}`}
-            height={`${isSmallScreen ? 20 : 36}`}
-            className=" translate-y-[8px] md:translate-y-[10px] xl:translate-y-3 transition-all duration-200 group-hover:translate-y-7 md:group-hover:translate-y-8 xl:group-hover:translate-y-11"
+            width={50}
+            height={50}
+            className="h-5 w-5 md:w-9 md:h-9 xl:w-[52px] xl:h-[52px] translate-y-[8px] md:translate-y-[13px] xl:translate-y-3 transition-all duration-200 group-hover:translate-y-5 md:group-hover:translate-y-10 xl:group-hover:translate-y-14"
           />
           <Image
             src="/LockMain.png"
             alt="Lock Main"
-            width={`${isSmallScreen ? 28 : 52}`}
-            height={`${isSmallScreen ? 28 : 52}`}
-            className=" z-10"
+            width={70}
+            height={70}
+            className="h-7 w-7 md:h-12 md:w-12 xl:h-20 xl:w-20 z-10"
           />
         </div>
 
-        <div className="Welcome-box px-[10px] xl:px-[15px] py-[2px] xl:py-[4px] z-[20] border my-2 xl:my-[20px] border-[#7042f88b] opacity-[0.9]">
-          <h1 className="Welcome-text text-[10px] xl:text-sm">Encryption</h1>
+        <div className="Welcome-box px-1 py-[1px] md:px-[10px] xl:px-[15px]  xl:py-[4px] z-[20] border my-1 md:my-2 xl:my-[20px] border-[#7042f88b] opacity-[0.9]">
+          <h1 className="Welcome-text text-[8px] md:text-[10px] xl:text-sm">
+            Encryption
+          </h1>
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">

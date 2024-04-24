@@ -74,7 +74,7 @@ const Navbar = () => {
                 </svg>
               </div>
             </div>
-            <div className=" flex flex-col items-center justify-between  relative">
+            <div className=" flex flex-col items-center justify-between relative ">
               <div className=" border-gray-400 flex flex-col gap-8 p-4 text-lg  tracking-wide mob-nav">
                 <Link
                   href="#about-me"
@@ -164,7 +164,7 @@ const Navbar = () => {
           </div>
         </section>
         <div className="DESKTOP-MENU md:w-[500px] h-full md:flex flex-row items-center justify-center md:mr-10 xl:mr-20 ">
-          <div className="hidden md:flex items-center justify-between gap-8 lg:w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-4 px-5 py-[10px] rounded-full text-gray-200 md:text-sm lg:text-base">
+          <div className="hidden md:flex items-center justify-between gap-8 lg:w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-4 px-5 py-[10px] rounded-full text-gray-200 text-base">
             <Link href="#about-me" className="cursor-pointer">
               About
             </Link>
