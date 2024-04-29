@@ -1,14 +1,12 @@
 "use client";
+
 import React from "react";
 
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
 
 const Encryption = () => {
-  // const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
-  // min-h-[450px] md:min-h-[650px] lg:min-h-[800px]
   return (
     <div className="flex flex-row relative items-center justify-center min-h-[450px] md:min-h-[650px] lg:min-h-[800px] xl:min-h-screen  w-full h-full">
       <div className="absolute w-auto h-auto top-0 z-[5]">
@@ -49,7 +47,7 @@ const Encryption = () => {
         </div>
       </div>
       <div className="absolute z-[20] bottom-[10px] px-[5px]">
-        <div className="cursive text-lg md:text-xl lg:text-2xl font-medium text-center text-gray-300">
+        <div className="font-sans text-lg md:text-xl lg:text-2xl font-medium text-center text-gray-300">
           Secure your data with end-to-end encryption
         </div>
       </div>
@@ -62,7 +60,7 @@ const Encryption = () => {
           playsInline
           preload="false"
           className="w-full h-auto"
-          src="/encryption.webm/"
+          src="/encryption.webm"
         />
       </div>
     </div>

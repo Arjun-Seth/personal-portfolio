@@ -13,12 +13,12 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center md:gap-3 h-full relative overflow-hidden pb-32 md:pb-48 lg:pb-64 py-20"
+      className="flex flex-col items-center justify-center md:gap-3 h-full relative overflow-hidden pb-32 md:pb-48 lg:pb-64 md:py-20 py-32"
       style={{ transform: "scale(0.9" }}
     >
       <SkillText />
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-[7px] md:gap-3 lg:gap-5 items-center z-[30]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-[6px] md:gap-3 lg:gap-5 items-center z-[30]">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -76,7 +76,7 @@ const Skills = () => {
       </div>
 
       <div className="w-full h-full absolute">
-        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
+        <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover mt-16 md:mt-0">
           <video
             className="w-full h-auto"
             preload="false"

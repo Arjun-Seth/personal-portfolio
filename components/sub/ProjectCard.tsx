@@ -1,10 +1,5 @@
-import { slideInFromLeft } from "@/utils/motion";
-import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 interface Props {
   src: string;
@@ -22,7 +17,7 @@ const ProjectCard = ({
   liveUrl,
 }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] z-[30]">
+    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] z-[30] ">
       <Image
         src={src}
         alt={title}
@@ -45,6 +40,7 @@ const ProjectCard = ({
             width={32}
             height={32}
             className=" animate"
+            loading="lazy"
           />
           {/* <i className="fa-brands fa-github fa-beat-fade animate-cion"></i> */}
           {/* <FontAwesomeIcon
@@ -56,12 +52,12 @@ const ProjectCard = ({
           /> */}
         </a>
       </div>
-      <div className="relative p-3 flex items-center justify-center">
+      <div className="relative p-3 flex items-center justify-center ">
         <a
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="py-2 button-primary text-center text-gray-200 cursor-pointer rounded-lg min-w-[120px] flex justify-center items-center gap-2 pl-2 "
+          className="py-2 button-primary text-center text-gray-200 cursor-pointer rounded-lg min-w-[120px] flex justify-center items-center gap-2 pl-2"
         >
           Live link
           <Image src="/flash1.svg" alt="flash-icon" width={24} height={24} />

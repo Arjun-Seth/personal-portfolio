@@ -15,7 +15,7 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-4 sm:px-8 md:px-10 lg:px-20 mt-40 w-full z-[30] "
+      className="flex md:flex-row flex-col items-center justify-center px-4 sm:px-8 md:px-10 lg:px-20 mt-40 w-full z-[30] md:gap-0 gap-5 "
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start ">
         <motion.div
@@ -45,8 +45,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-sm sm:text-base lg:text-lg text-gray-400 my-3 lg:my-5 max-w-[600px]"
         >
-          I&apos;m a Software Engineer with experience in Website and Software
-          development. Check out my projects and skills.
+          I&apos;m a passionate Software Engineer with a knack for building
+          user-friendly websites and applications. Explore my projects to see my
+          skills in action!
         </motion.p>
         {/* <motion.a
           variants={slideInFromLeft(1)}
@@ -81,6 +82,7 @@ const HeroContent = () => {
           alt="work icons"
           height={650}
           width={650}
+          // className="md:h-[650px] md:w-[650px] h-96 w-96"
         />
       </motion.div>
     </motion.div>

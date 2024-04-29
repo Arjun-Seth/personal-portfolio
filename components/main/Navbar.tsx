@@ -34,12 +34,12 @@ const Navbar = () => {
             className="HAMBURGER-ICON space-y-2 cursor-pointer"
             onClick={() => setIsNavOpen((prev) => !prev)}
           >
-            <span className="block h-0.5 w-8 animate bg-gray-300"></span>
-            <span className="block h-0.5 w-8 animate bg-gray-300"></span>
-            <span className="block h-0.5 w-8 animate bg-gray-300"></span>
+            <span className="block h-0.5 w-[30px] animate bg-gray-300"></span>
+            <span className="block h-0.5 w-[30px] animate bg-gray-300"></span>
+            <span className="block h-0.5 w-[30px] animate bg-gray-300"></span>
           </div>
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-            <div className="w-full h-auto flex flex-row items-center justify-between pl-[10px]  ">
+            <div className="w-full h-[65px] top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md flex flex-row items-center justify-between pl-[10px] ">
               <a
                 href="#about-me"
                 className="h-auto w-auto flex flex-row items-center justify-center"

@@ -61,6 +61,7 @@ const SkillDataProvider = ({ src, index }: Props) => {
         width={0}
         height={0}
         className="h-[30px] w-[30px] sm:h-12 sm:w-12 md:h-16 md:w-16 xl:h-20 xl:w-20"
+        loading="lazy"
       />
     </motion.div>
   );

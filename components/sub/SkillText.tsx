@@ -28,7 +28,7 @@ const SkillText = () => {
       </motion.div>
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-lg md:text-xl lg:text-2xl text-gray-200 md:mb-10 mt-1 md:mt-[10px] text-center"
+        className="font-sans text-lg md:text-xl lg:text-2xl text-gray-200 mb-5 md:mb-10 mt-1 md:mt-[10px] text-center"
       >
         Never miss a task, deadline or idea
       </motion.div>
