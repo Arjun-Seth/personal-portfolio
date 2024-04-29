@@ -56,7 +56,7 @@ const HeroContent = () => {
           Learn More!
         </motion.a> */}
         <motion.a
-          href="/Final-Arjun-resume.pdf"
+          href="https://drive.google.com/file/d/1mI3FAICD-uENEjMg5mNNMZg9WiR0knRl/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           download
