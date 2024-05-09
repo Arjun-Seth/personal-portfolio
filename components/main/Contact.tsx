@@ -4,6 +4,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Socials } from "@/constants";
 import Image from "next/image";
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface FormValues {
   name: string;
@@ -53,7 +55,18 @@ const Contact: React.FC = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          // alert("Thank you. I will get back to you as soon as possible.");
+          toast.success("Thanks! Will get back soon.", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Bounce,
+          });
 
           setForm({
             name: "",
@@ -63,9 +76,19 @@ const Contact: React.FC = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          // console.error(error);
+          toast.error("Oops, error. Please try again.", {
+            position: "bottom-center",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Bounce,
+          });
+          // alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -181,6 +204,19 @@ const Contact: React.FC = () => {
               >
                 {loading ? "Sending..." : "Send"}
               </button>
+              <ToastContainer
+                position="bottom-center"
+                autoClose={5000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+                transition={Bounce}
+              />
             </form>
           </div>
         </div>
