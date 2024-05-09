@@ -78,28 +78,28 @@ const Navbar = () => {
               <div className=" border-gray-400 flex flex-col gap-8 p-4 text-lg  tracking-wide mob-nav">
                 <Link
                   href="#about-me"
-                  className="cursor-pointer border-b hover:text-white"
+                  className="cursor-pointer border-b  border-slate-600 hover:text-white"
                   onClick={() => setIsNavOpen(false)}
                 >
                   About
                 </Link>
                 <Link
                   href="#skills"
-                  className="cursor-pointer border-b hover:text-white"
+                  className="cursor-pointer border-b border-slate-600 hover:text-white"
                   onClick={() => setIsNavOpen(false)}
                 >
                   Skills
                 </Link>
                 <Link
                   href="#projects"
-                  className="cursor-pointer border-b hover:text-white"
+                  className="cursor-pointer border-b border-slate-600 hover:text-white"
                   onClick={() => setIsNavOpen(false)}
                 >
                   Projects
                 </Link>
                 <Link
                   href="#contact"
-                  className="cursor-pointer border-b hover:text-white"
+                  className="cursor-pointer border-b border-slate-600 hover:text-white"
                   onClick={() => setIsNavOpen(false)}
                 >
                   Contact
