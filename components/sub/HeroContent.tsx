@@ -56,7 +56,7 @@ const HeroContent = () => {
           Learn More!
         </motion.a> */}
         <motion.a
-          href="https://drive.google.com/file/d/1mI3FAICD-uENEjMg5mNNMZg9WiR0knRl/view?usp=sharing"
+          href="https://drive.google.com/file/d/1lj8JoA0bE9bQPxJeqGUVQLqtdhrBR2Q4/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           download
